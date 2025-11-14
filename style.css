@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "ODIN";
+    src: url("./fonts/Norse-Bold.woff");
+}
+
+body{
+    height: 100vh;
+    display: flex;
+}
+
+.left{
+    background: url(./img/photo-1585202900225-6d3ac20a6962.avif);
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-top: 20vh;
+    display: flex;
+    font-size: 6rem;
+    align-items: center;
+    justify-content: center;
+    font-family: "ODIN";
+    background-color: rgba(0,0,0,0.4);
+    padding: 1rem;
+}
+
+.logo img{
+    height: 9.5rem;
+}
+
+.photoBy > p{
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.photoBy{
+    width: 100%;
+}
+
+a:visited{
+    color: white;
+}
+
+.right{
+    flex: 2;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.top{
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 2rem;
+}
+
+.top p{
+    width: 70ch;
+}
+
+.middle{
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 2rem;
+    box-shadow: 0 3px 0 0 rgba(0,0,0,0.1);
+    padding-left: 2rem;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    width: 75ch;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+label{
+    color: #1F2937;
+    font-weight: 550;
+}
+
+input{
+    border: 1px solid #b6b8bd;
+    font-size: 1rem;
+    padding: 0.4rem;
+    border-radius: 6px;
+}
+
+.middle > p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+button{
+    background-color: #596D48;
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    border: 0;
+    color: rgb(255,255,255);
+    font-weight: bold;
+}
+
+.bottom{
+    padding-left: 2rem;
+}
+
+.bottom p{
+    margin-top: 2rem;
+    font-weight: 700;
+}
+
+.bottom a, .bottom a:link{
+    text-decoration: none;
+    color: #596D48;
+}
+
+input:focus{
+    border: 1px solid rgb(62, 62, 241);
+    box-shadow: 1px 1px 0 0 rgb(85, 85, 100);
+    outline: none;
+}
+input:invalid{
+    border: 1px solid rgb(241, 62, 62);
+    box-shadow: 1px 1px 0 0 rgb(85, 85, 100);
+    outline: none;
+}
